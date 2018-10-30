@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="icon" href="images/iconimg.ico"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="javascript/web3.js"></script>
+	<title>Evaluator Login </title>
+</head>
+
+<body>
+<center> <h2>Evaluator Login</h2> </center>
+
+<div class="imgcontainer">
+  <img src="images/evaluator.png" alt="Evaluator" class="eval">
+</div>
+
+<div class="container">
+<center>
+   <label for="uname"><b>Username</b></label>
+   <input type="text" placeholder="Enter Username" name="uname" id="username" required>
+</center>
+<center>
+  <label for="psw"><b>Password</b></label>
+  <input type="password" placeholder="Enter Password" id="password" name="psw" required>
+</center> 
+<div class="btnlog">
+<center>
+  <button type="submit" id="loginBtn" onclick="checkLogin(2)">Login</button>
+</center>
+</div>
+<div class="btnlog">
+<center>
+  <button onclick="window.location.href='eval_register.html'">Register</button>
+</center> 
+</div>
+
+<script src="javascript/StudentPortal.js"></script>
+</body>
+</html>

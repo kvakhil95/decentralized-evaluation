@@ -1,0 +1,301 @@
+<html>
+<head>
+	<link rel="stylesheet" href="css/stylesheet.css">
+	<link rel="icon" href="images/iconimg.ico"/>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<script type="text/javascript" src="javascript/web3.js"></script>
+	<title>Evaluator Portal </title>
+</head>
+
+<body>
+<center>
+<br>
+<h1>Evaluator Portal</h1>
+<h3>Your Credibility Scores</h3>
+<br>
+<table id="myTable" cellspacing="40" border="1">
+	<tr>
+	<th><font color="#990066">Machine Learning</font></th>
+	<th><font color="#990066">Artificial Intelligence</font></th>
+	<th><font color="#990066">Blockchain</font></th>
+	</tr>
+
+	<tr>
+	<td>1050</td>
+	<td>800</td>
+	<td>800</td>
+	</tr>	
+</table>
+<br>
+<br>
+<h3>Pending Evaluations</h3>
+<div class="btn1">
+<center>
+	<button type="submit" onclick="displayEvaluatorTasks()">View Tasks</button>
+  </center> 
+</div>
+<br>
+<table id="myTable1" cellspacing="40" border="1">
+<tr>
+<th><font color="#990066">Number </font></th>
+<th><font color="#990066">Task ID </font></th>
+<th><font color="#990066">Technology </font></th>
+<th><font color="#990066">Task Name </font></th>
+<th><font color="#990066">Upvote</font></th>
+<th><font color="#990066">Downvote</font></th>
+</tr>
+<tr>
+    <td>1</td>
+    <td name="tasks"></td>
+	<td name="tasks"></td>
+    <td name="tasks"></td>
+    <td>
+		<div class="btn1">
+		<center>
+		<button onclick="vote(0,1)">Upvote</button>
+		</center> 
+		</div>
+	</td>
+    <td>
+		<div class="btn2">
+		<center>
+		<button onclick="vote(0,0)">Downvote</button>
+		</center> 
+		</div>
+	</td>	 
+</tr>
+<tr>
+    <td>2</td>
+    <td name="tasks"></td>
+    <td name="tasks"></td>
+	<td name="tasks"></td>
+    <td><div class="btn1">
+		<center>
+		<button onclick="vote(1,1)">Upvote</button>
+		</center> 
+		</div>
+	</td>
+    <td>
+		<div class="btn2">
+			<center>
+			<button onclick="vote(1,0)">Downvote</button>
+			</center> 
+			</div>
+	</td>
+</tr>
+<tr>
+    <td>3</td>
+    <td name="tasks"></td>
+    <td name="tasks"></td>
+	<td name="tasks"></td>
+    <td><div class="btn1">
+		<center>
+		<button onclick="vote(2,1)">Upvote</button>
+		</center> 
+		</div>
+	</td>
+    <td>
+		<div class="btn2">
+			<center>
+			<button onclick="vote(2,0)">Downvote</button>
+			</center> 
+			</div>
+	</td>
+</tr>
+<tr>
+    <td>4</td>
+    <td name="tasks"></td>
+    <td name="tasks"></td>
+	<td name="tasks"></td>
+    <td><div class="btn1">
+		<center>
+		<button onclick="vote(3,1)">Upvote</button>
+		</center> 
+		</div>
+	</td>
+    <td>
+		<div class="btn2">
+			<center>
+			<button onclick="vote(3,0)">Downvote</button>
+			</center> 
+			</div>
+	</td>
+</tr>
+<tr>
+    <td>5</td>
+    <td name="tasks"></td>
+    <td name="tasks"></td>
+	<td name="tasks"></td>
+    <td><div class="btn1">
+		<center>
+		<button onclick="vote(4,1)">Upvote</button>
+		</center> 
+		</div>
+	</td>
+    <td>
+		<div class="btn2">
+			<center>
+			<button onclick="vote(4,0)">Downvote</button>
+			</center> 
+			</div>
+	</td>
+</tr>
+<tr>
+    <td>6</td>
+    <td name="tasks"></td>
+    <td name="tasks"></td>
+	<td name="tasks"></td>
+    <td><div class="btn1">
+		<center>
+		<button onclick="vote(5,1)">Upvote</button>
+		</center> 
+		</div>
+	</td>
+    <td>
+		<div class="btn2">
+			<center>
+			<button onclick="vote(5,0)">Downvote</button>
+			</center> 
+			</div>
+	</td>
+</tr>
+<tr>
+    <td>7</td>
+    <td name="tasks"></td>
+    <td name="tasks"></td>
+	<td name="tasks"></td>
+    <td><div class="btn1">
+		<center>
+		<button onclick="vote(6,1)">Upvote</button>
+		</center> 
+		</div>
+	</td>
+    <td>
+		<div class="btn2">
+			<center>
+			<button onclick="vote(6,0)">Downvote</button>
+			</center> 
+			</div>
+	</td>
+</tr>
+<tr>
+    <td>8</td>
+    <td name="tasks"></td>
+    <td name="tasks"></td>
+	<td name="tasks"></td>
+    <td><div class="btn1">
+		<center>
+		<button onclick="vote(7,1)">Upvote</button>
+		</center> 
+		</div>
+	</td>
+    <td>
+		<div class="btn2">
+			<center>
+			<button onclick="vote(7,0)">Downvote</button>
+			</center> 
+			</div>
+	</td>
+</tr>
+<tr>
+    <td>9</td>
+    <td name="tasks"></td>
+    <td name="tasks"></td>
+	<td name="tasks"></td>
+    <td><div class="btn1">
+		<center>
+		<button onclick="vote(8,1)">Upvote</button>
+		</center> 
+		</div>
+	</td>
+    <td>
+		<div class="btn2">
+			<center>
+			<button onclick="vote(8,0)">Downvote</button>
+			</center> 
+			</div>
+	</td>
+</tr>
+<tr>
+    <td>10</td>
+    <td name="tasks"></td>
+    <td name="tasks"></td>
+	<td name="tasks"></td>
+    <td><div class="btn1">
+		<center>
+		<button onclick="vote(9,1)">Upvote</button>
+		</center> 
+		</div>
+	</td>
+    <td>
+		<div class="btn2">
+			<center>
+			<button onclick="vote(9,0)">Downvote</button>
+			</center> 
+			</div>
+	</td>
+</tr>
+<tr>
+    <td>11</td>
+    <td name="tasks"></td>
+    <td name="tasks"></td>
+	<td name="tasks"></td>
+    <td><div class="btn1">
+		<center>
+		<button onclick="vote(10,1)">Upvote</button>
+		</center> 
+		</div>
+	</td>
+    <td>
+		<div class="btn2">
+			<center>
+			<button onclick="vote(10,0)">Downvote</button>
+			</center> 
+			</div>
+	</td>
+</tr>
+<tr>
+    <td>12</td>
+    <td name="tasks"></td>
+    <td name="tasks"></td>
+	<td name="tasks"></td>
+    <td><div class="btn1">
+		<center>
+		<button onclick="vote(11,1)">Upvote</button>
+		</center> 
+		</div>
+	</td>
+    <td>
+		<div class="btn2">
+			<center>
+			<button onclick="vote(11,0)">Downvote</button>
+			</center> 
+			</div>
+	</td>
+</tr>
+<tr>
+    <td>13</td>
+    <td name="tasks"></td>
+    <td name="tasks"></td>
+	<td name="tasks"></td>
+    <td><div class="btn1">
+		<center>
+		<button onclick="vote(12,1)">Upvote</button>
+		</center> 
+		</div>
+	</td>
+    <td>
+		<div class="btn2">
+			<center>
+			<button onclick="vote(12,0)">Downvote</button>
+			</center> 
+			</div>
+	</td>
+</tr>
+</table>
+<center>
+	<p id="taskStatus"></p>
+</center>
+<script src="javascript/StudentPortal.js"></script>
+</body>
+</html>

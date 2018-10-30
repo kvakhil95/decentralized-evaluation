@@ -1,0 +1,29 @@
+{
+  "name": "evaluationv01",
+  "version": "1.0.1",
+  "description": "An evaluation portal",
+  "main": "index.js",
+  "scripts": {
+    "test": "http-server",
+    "dev": "lite-server"
+  },
+  "author": "AKhil",
+  "license": "ISC",
+  "dependencies": {
+    "http-server": "^0.11.1"
+  },
+  "devDependencies": {
+    "lite-server": "^2.4.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rjhigh/project0.2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/rjhigh/project0.2/issues"
+  },
+  "homepage": "https://github.com/rjhigh/project0.2#readme",
+  "keywords": [
+    "Portal"
+  ]
+}

@@ -1,0 +1,118 @@
+<html>
+<head>
+  <link rel="stylesheet" href="css/stylesheet.css">
+  <link rel="icon" href="images/iconimg.ico"/>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <script type="text/javascript" src="javascript/web3.js"></script>
+  <script src="javascript/StudentPortal.js"></script>
+  <title>Student Portal</title>
+</head>
+
+<body>
+<center>
+<br>
+<h1>Student Portal</h1>
+
+<h3>Add a New Submission</h3>
+<br>
+<br>
+
+<table id="Table1" cellspacing="40" border="1">
+<tr>
+  <th>Task Name</th><td><input type="text" style="border:0px solid #ff0000" name="key" id="0" placeholder="Enter Task Name"></td>
+</tr>
+<tr>
+
+<th>Technology</th>
+  <td>
+  <select id="cardtype" name="cards">
+    <option value="1">1. Machine Learning</option>
+    <option value="2">2. Artificial Intelligence</option>
+    <option value="3">3. Blockchain</option>
+  </select> 
+  </td>
+</tr>
+</table>
+<br>
+<div class="btn1">
+  <center>
+    <button type="submit" onclick="submitTask()">Submit</button>
+  </center>
+  <center>
+    <p id="taskStatus"></p>
+  </center>
+</div>
+
+<br>
+<h3>View status of submitted tasks</h3>
+<div class="btn1">
+<center>
+  <button type="submit" onclick="displayTasks()">View Tasks</button>
+</center>
+</ul>
+</div>
+<br>
+<table id="myTable" cellspacing="40" border="1">
+<tr>
+<th><font color="#990066">Number </font></th>
+<th><font color="#990066">Task ID </font></th>
+<th><font color="#990066">Technology ID </font></th>
+<th><font color="#990066">Task Name </font></th>
+<th><font color="#990066">Upvote Count </font></th>
+<th><font color="#990066">Downvote Count </font></th>
+<th><font color="#990066">Status</font></th>
+<th><font color="#990066">Certificate</font></th>
+
+</tr>
+<tr>
+    <td>1</td>
+    <td id="task1Id" name="tasks"></td>
+    <td id="task1Name" name="tasks"></td>
+    <td id="task1Technology" name="tasks"></td>
+    <td id="task1upvote" name="tasks"></td>
+    <td id="task1downvote" name="tasks"></td>
+    <td id="task1status" name="tasks"></td> 
+    <td>
+    <div class="btn1">
+    <center>
+    <button onclick="window.open('stu_certificate.html')">View</button>
+    </center> 
+    </div>
+  </td>
+</tr>
+<tr>
+    <td>2</td>
+    <td id="task2Id" name="tasks"></td>
+    <td id="task2Name" name="tasks"></td>
+    <td id="task2Technology" name="tasks"></td>
+    <td id="task2upvote" name="tasks"></td>
+    <td id="task2downvote" name="tasks"></td>
+    <td id="task2status" name="tasks"></td> 
+    <td>
+    <div class="btn1">
+    <center>
+    <button onclick="window.open('stu_certificate.html')">View</button>
+    </center> 
+    </div>
+  </td>
+</tr>
+<tr>
+    <td>3</td>
+    <td  id="task3Id" name="tasks"></td>
+    <td  id="task3Name" name="tasks"></td>
+    <td id="task2Technology" name="tasks"></td>
+    <td id="task3upvote" name="tasks"></td>
+    <td  id="task3downvote" name="tasks"></td>
+    <td id="task3status" name="tasks"></td>
+    <td>
+    <div class="btn1">
+    <center>
+    <button onclick="window.open('stu_certificate.html')">View</button>
+    </center> 
+    </div>
+  </td>
+</tr>
+</table>
+
+</body>
+</html>
