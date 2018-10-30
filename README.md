@@ -58,3 +58,5 @@ Tools/Languages used:
 
 
 Access the project on: https://decentralized-learning.herokuapp.com/index.html
+Steps to install the project locally once downloaded from Git: https://drive.google.com/open?id=1aqk-XasTJ28ojNqoVwFksxaCvrWUxtqp
+
